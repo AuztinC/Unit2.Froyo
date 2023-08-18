@@ -8,10 +8,10 @@ function checkFlavors(str){
         let key = promptArr[i]
         if(flavorObj[key] === undefined){
             flavorObj[key] = 0;
+            // console.log(flavorObj[key])
         }
         flavorObj[key]++
     }
-    // console.log(promptArr)
     return flavorObj
 }
 console.log(checkFlavors(userPrompt))
